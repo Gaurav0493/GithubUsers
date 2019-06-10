@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL} >
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/user/:id" exact component={UserDetail} />

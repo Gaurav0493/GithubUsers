@@ -95,7 +95,7 @@ import RepoList from './RepoList';
             <div >
                 <div className="repo-list">
                 <Typography variant="body4" color="primary" align="center ">
-                {user.name}'s Repositorites
+                {user.name? `${user.name}'s Repositorites`: 'Users Repositorites'}
                 </Typography>
                 </div>
                 {repos &&
