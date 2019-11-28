@@ -6,12 +6,14 @@ import { Link } from 'react-router-dom';
 
 const useStyles = {
     root: {
-      marginTop: '20px',
+      marginTop: '30px',
       flexGrow: 1,
+      marginBottom: '20px',
     },
     paper: {
       margin: 'auto',
       maxWidth: 1000,
+      paddingLeft: '10px'
     },
     image: {
       width: 128,

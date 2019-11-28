@@ -5,11 +5,14 @@ import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import { textAlign } from '@material-ui/system';
 
 const useStyles = {
     root: {
-      marginTop: '20px',
+      marginTop: '40px',
       flexGrow: 1,
+      marginBottom: '20px',
+      
     },
     paper: {
       margin: 'auto',

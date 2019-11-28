@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: inline;
 }
 
 .search-bar {
@@ -24,6 +25,7 @@
 }
 
 .repo-list {
+  margin-top: 15px;
   text-align: center;
 }
 

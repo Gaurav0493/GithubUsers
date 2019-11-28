@@ -5,6 +5,8 @@ import UserDetail from './components/UserDetail';
 import RepoDetail from './components/RepoDetail';
 import RecentSearch from './components/RecentSearch';
 import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 import { connect } from 'react-redux'; 
 
@@ -66,9 +68,9 @@ const Home = () => {
     <div className="App">
       <p> Look for Github Users</p>
       <form onSubmit={getUserSearch} className='search-form' >
-        <input className='search-bar' type="text" value={search} onChange={updateSearch}/>
-        <button className='search-button' type="submit"> Search </button>
-        <button className='clear-search-button' type="button" onClick={resetSearch}> Clear Result</button>
+        <TextField className='search-bar' type="text" value={search} onChange={updateSearch}/>
+        <Button color="primary" className='search-button' type="submit"> Search </Button>
+        <Button color="secondary" className='clear-search-button' type="button" onClick={resetSearch}> Clear Result</Button>
       </form>
 
     {storeSearch &&  storeSearch.length > 0 && <div>
