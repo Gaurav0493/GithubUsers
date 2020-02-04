@@ -3,6 +3,10 @@
   display: inline;
 }
 
+.search-form {
+  justify-content: space-evenly;
+}
+
 .search-bar {
   width: 50%;
   padding:  10px;
